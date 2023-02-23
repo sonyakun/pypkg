@@ -1,5 +1,7 @@
 # pypkg
 pypkg: Python pyproject.toml Genelator
+
+Have a bug report or feature request? Please go to [lssues](https://github.com/sonyakun/pypkg/issues).
 # commands
 ### pypkg add (package)
 pyproject.toml add requiements package(not working)
