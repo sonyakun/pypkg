@@ -2,15 +2,15 @@ from setuptools import setup
 import pypkg
 import sys
 
-DESCRIPTION = "pypkg: Python pyproject.toml Genelator"
-NAME = 'pypkg'
+DESCRIPTION = "sakurapkg: Python pyproject.toml Genelator"
+NAME = 'sakurapkg'
 AUTHOR = 'sonyakun'
 AUTHOR_EMAIL = 'sonyakun217@gmail.com'
-URL = 'https://github.com/sonyakun/pyinit'
+URL = 'https://github.com/sonyakun/sakurapkg'
 LICENSE = 'MIT'
-DOWNLOAD_URL = 'https://github.com/sonyakun/pyinit/releases'
-VERSION = "1.0.0"
-PYTHON_REQUIRES = ">=3.9"
+DOWNLOAD_URL = 'https://github.com/sonyakun/sakurapkg/releases'
+VERSION = "0.0.1"
+PYTHON_REQUIRES = ">=3.10"
 
 INSTALL_REQUIRES = [
     'toml',
@@ -46,7 +46,7 @@ setup(
       classifiers=CLASSIFIERS,
     entry_points={
         "console_scripts": [
-            "pypkg=pypkg.cli.main:main".format(sys.version_info[0]),
+            "sakura=pypkg.cli.main:main".format(sys.version_info[0]),
         ]
     },
 )
