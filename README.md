@@ -1,3 +1,6 @@
+This document is available in multiple languages
+
+|English|[日本語](https://github.com/sonyakun/sakurapkg/blob/main/docs/README_JA.md)|
 # sakurapkg
 sakurapkg: Python pyproject.toml Genelator
 
