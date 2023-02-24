@@ -1,6 +1,6 @@
 |[English](https://github.com/sonyakun/sakurapkg/blob/main/README.md)|[日本語](https://github.com/sonyakun/sakurapkg/blob/main/docs/README_JA.md)|繁體中文|[簡体中文](https://github.com/sonyakun/sakurapkg/blob/main/docs/README_SC.md)|[한국어](https://github.com/sonyakun/sakurapkg/blob/main/docs/README_KR.md)|
 
-#sakurapkg
+# sakurapkg
 sakurapkg：Python pyproject.toml 生成器
 
 有錯誤報告或功能請求？請轉到 [lssues](https://github.com/sonyakun/pypkg/issues)。
