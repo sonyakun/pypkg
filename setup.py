@@ -34,7 +34,7 @@ setup(
       maintainer=AUTHOR,
       maintainer_email=AUTHOR_EMAIL,
       description=DESCRIPTION,
-      long_description=long_description,
+      long_description=long_description_content_type,
       license=LICENSE,
       url=URL,
       download_url=DOWNLOAD_URL,
