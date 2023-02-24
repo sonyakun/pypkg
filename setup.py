@@ -9,7 +9,6 @@ AUTHOR_EMAIL = 'sonyakun217@gmail.com'
 URL = 'https://github.com/sonyakun/sakurapkg'
 LICENSE = 'MIT'
 DOWNLOAD_URL = 'https://github.com/sonyakun/sakurapkg/releases'
-VERSION = "0.0.1.2"
 PYTHON_REQUIRES = ">=3.10"
 
 INSTALL_REQUIRES = [
@@ -43,7 +42,6 @@ setup(
       long_description=long_description,
       license=LICENSE,
       url=URL,
-      version=VERSION,
       download_url=DOWNLOAD_URL,
       python_requires=PYTHON_REQUIRES,
       install_requires=INSTALL_REQUIRES,
