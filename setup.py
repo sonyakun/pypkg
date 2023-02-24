@@ -29,10 +29,6 @@ with open('README.md', 'r') as fp:
 long_description = readme
 
 setup(
-    use_scm_version=True,
-    setup_requires=[
-        "setuptools_scm"
-    ],
     name=NAME,
       version="0.0.1.3",
       author=AUTHOR,
