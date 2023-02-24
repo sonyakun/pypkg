@@ -34,6 +34,7 @@ setup(
         "setuptools_scm"
     ],
     name=NAME,
+      version="0.0.1.3"
       author=AUTHOR,
       author_email=AUTHOR_EMAIL,
       maintainer=AUTHOR,
