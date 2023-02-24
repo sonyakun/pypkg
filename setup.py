@@ -30,6 +30,10 @@ with open('README.md', 'r') as fp:
 long_description = readme
 
 setup(
+    use_scm_version=True,
+    setup_requires=[
+        "setuptools_scm"
+    ],
     name=NAME,
       author=AUTHOR,
       author_email=AUTHOR_EMAIL,
