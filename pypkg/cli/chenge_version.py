@@ -15,7 +15,7 @@ class chenge_version(Command):
             "t",
             description="install testing version sakurapkg",
             flag=True
-        )
+        ),
         option(
             "release",
             "r",
