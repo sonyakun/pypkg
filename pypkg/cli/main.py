@@ -20,6 +20,7 @@ COMMANDS = [
     "add",
     "build",
     "init",
+    "chenge-version",
 # Debug Only CMD
     "debug showinfo",
 ]
