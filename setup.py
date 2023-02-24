@@ -24,9 +24,7 @@ CLASSIFIERS = [
     'Programming Language :: Python :: 3 :: Only',
 ]
 
-with open('README.md', 'r') as fp:
-    readme = fp.read()
-long_description = readme
+long_description_content_type = "https://github.com/sonyakun/sakurapkg"
 
 setup(
     name=NAME,
