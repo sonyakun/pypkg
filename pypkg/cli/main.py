@@ -20,6 +20,7 @@ COMMANDS = [
     "add",
     "build",
     "init",
+    "change-version",
 # Debug Only CMD
     "debug showinfo",
 ]

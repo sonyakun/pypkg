@@ -1,10 +1,13 @@
 import toml
+from toml.decoder import TomlDecodeError
 from cleo.commands.command import Command
 from cleo.helpers import argument, option
 import logging, os, requests, json, sys, subprocess, re, platform, pathlib
 import itertools
 import threading
 import time
+import pypkg
+from pypkg.exceptions import sakurapkg_error
 logger = logging.getLogger(__name__)
 logging.basicConfig()
 def loading():
@@ -20,11 +23,14 @@ def loading():
 def add_requires(name):
     global project_name
     if os.path.isfile("pyproject.toml"):
-        dict_toml = toml.load(open('pyproject.toml'))
-        var = dict_toml['build-system']['requires']
-        project_name = dict_toml["project"]["name"]
-        dict_toml['build-system']['requires'] = var + [name]
-        toml.dump(dict_toml, open('pyproject.toml', mode='w'))
+        try:
+            dict_toml = toml.load(open('pyproject.toml'))
+            var = dict_toml['build-system']['requires']
+            project_name = dict_toml["project"]["name"]
+            dict_toml['build-system']['requires'] = var + [name]
+            toml.dump(dict_toml, open('pyproject.toml', mode='w'))
+        except (TomlDecodeError,TypeError,PermissionError) as e:
+            sakurapkg_error.report_error(version=pypkg.__version__, traceback=e, command=f"sakura install {name}")
     else:
         raise FileNotFoundError("pyinit init not executed (pyproject.toml does not exist).")
 
