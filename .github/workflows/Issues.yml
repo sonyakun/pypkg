@@ -11,7 +11,7 @@ name: Add comment
 on:
   issues:
     types:
-      - labeled
+      - created
 jobs:
   add-comment:
     runs-on: ubuntu-latest
