@@ -21,12 +21,10 @@ def loading():
         time.sleep(0.1)
 
 def add_requires(name):
-    global project_name
     if os.path.isfile("pyproject.toml"):
         try:
             dict_toml = toml.load(open('pyproject.toml'))
             var = dict_toml['build-system']['requires']
-            project_name = dict_toml["project"]["name"]
             dict_toml['build-system']['requires'] = var + [name]
             toml.dump(dict_toml, open('pyproject.toml', mode='w'))
         except (TomlDecodeError,TypeError,PermissionError) as e:
