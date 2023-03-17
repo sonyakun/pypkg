@@ -3,6 +3,7 @@ from cleo.commands.command import Command
 from cleo.helpers import argument, option
 import logging, os
 import pypkg
+from pypkg import __version__
 from pypkg.exceptions import sakurapkg_error
 from toml.decoder import TomlDecodeError
 
@@ -19,7 +20,7 @@ def add_requires(name):
         else:
             raise FileNotFoundError("pyinit init not executed (pyproject.toml does not exist).")
     except (TomlDecodeError,TypeError,PermissionError) as e:
-        sakurapkg_error.report_error(version=pypkg.__version__, traceback=e, command=f"sakura install {name}")
+        sakurapkg_error.report_error(version=pypkg.__version__.main(), traceback=e, command=f"sakura install {name}")
     
 
 class add_package_requies(Command):
