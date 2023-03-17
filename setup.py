@@ -28,7 +28,7 @@ long_description_content_type = "https://github.com/sonyakun/sakurapkg"
 
 setup(
     name=NAME,
-      version="0.0.1.8",
+      version="0.1.0",
       author=AUTHOR,
       author_email=AUTHOR_EMAIL,
       maintainer=AUTHOR,
