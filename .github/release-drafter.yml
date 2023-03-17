@@ -63,14 +63,10 @@ autolabeler:
     branch:
       - '/(enhancement|improve)[/-].+/'
 
-  - label: nextjs
+  - label: python
     files:
-      - 'src/**/*'
-      - 'package.json'
-      - 'yarn.lock'
-      - 'next*'
-      - 'tsconfig.json'
-      - '.eslintrc.json'
+      - 'pypkg/*'
+      - 'setup.py'
   - label: wasm
     files:
       - 'wasm/**/*'
