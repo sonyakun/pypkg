@@ -7,6 +7,7 @@ import itertools
 import threading
 import time
 import pypkg
+from pypkg import __version__
 from pypkg.exceptions import sakurapkg_error
 logger = logging.getLogger(__name__)
 logging.basicConfig()
