@@ -28,7 +28,7 @@ def add_requires(name):
             dict_toml['build-system']['requires'] = var + [name]
             toml.dump(dict_toml, open('pyproject.toml', mode='w'))
         except (TomlDecodeError,TypeError,PermissionError) as e:
-            sakurapkg_error.report_error(version=pypkg.__version__, traceback=e, command=f"sakura install {name}")
+            sakurapkg_error.report_error(version=pypkg.__version__.main(), traceback=e, command=f"sakura install {name}")
     else:
         raise FileNotFoundError("pyinit init not executed (pyproject.toml does not exist).")
 
